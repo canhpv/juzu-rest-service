@@ -2,8 +2,12 @@
                           scripts = {
                             @juzu.plugin.asset.Script(
                               id = "jquery",  
-                              src = "jquery-1.7.1.min.js", location = juzu.asset.AssetLocation.CLASSPATH)
-                          }
+                              src = "jquery-1.7.1.min.js", location = juzu.asset.AssetLocation.CLASSPATH)                             
+                          },stylesheets = {
+                              @Stylesheet(
+                                          src = "cs/bootstrap.css",
+                                          location = juzu.asset.AssetLocation.CLASSPATH)
+                                        }
                         )
 
 @Application
@@ -11,3 +15,4 @@
 
 import juzu.Application;
 import juzu.plugin.portlet.Portlet;
+import juzu.plugin.asset.Stylesheet;
